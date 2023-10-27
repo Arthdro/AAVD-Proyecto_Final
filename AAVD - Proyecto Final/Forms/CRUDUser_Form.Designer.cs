@@ -103,8 +103,8 @@
             this.pnlCRUDOp.Controls.Add(this.txtboxPayrollNum);
             this.pnlCRUDOp.Controls.Add(this.txtboxLastName2);
             this.pnlCRUDOp.Controls.Add(this.txtboxFirstNameOp);
-            this.pnlCRUDOp.Location = new System.Drawing.Point(34, 112);
-            this.pnlCRUDOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlCRUDOp.Location = new System.Drawing.Point(37, 112);
+            this.pnlCRUDOp.Margin = new System.Windows.Forms.Padding(2);
             this.pnlCRUDOp.Name = "pnlCRUDOp";
             this.pnlCRUDOp.Size = new System.Drawing.Size(688, 354);
             this.pnlCRUDOp.TabIndex = 97;
@@ -113,7 +113,7 @@
             // 
             this.btnDeleteOp.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteOp.Location = new System.Drawing.Point(309, 307);
-            this.btnDeleteOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeleteOp.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteOp.Name = "btnDeleteOp";
             this.btnDeleteOp.Size = new System.Drawing.Size(103, 29);
             this.btnDeleteOp.TabIndex = 98;
@@ -136,7 +136,7 @@
             // 
             this.btnCancelOp.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelOp.Location = new System.Drawing.Point(447, 307);
-            this.btnCancelOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelOp.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelOp.Name = "btnCancelOp";
             this.btnCancelOp.Size = new System.Drawing.Size(116, 29);
             this.btnCancelOp.TabIndex = 96;
@@ -148,7 +148,7 @@
             // 
             this.txtboxPasswordOp.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtboxPasswordOp.Location = new System.Drawing.Point(148, 251);
-            this.txtboxPasswordOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxPasswordOp.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxPasswordOp.Name = "txtboxPasswordOp";
             this.txtboxPasswordOp.Size = new System.Drawing.Size(185, 29);
             this.txtboxPasswordOp.TabIndex = 119;
@@ -157,7 +157,7 @@
             // 
             this.btnAddEditOp.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddEditOp.Location = new System.Drawing.Point(168, 307);
-            this.btnAddEditOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddEditOp.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddEditOp.Name = "btnAddEditOp";
             this.btnAddEditOp.Size = new System.Drawing.Size(104, 29);
             this.btnAddEditOp.TabIndex = 95;
@@ -181,7 +181,7 @@
             this.cboxTypeOfUser.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboxTypeOfUser.FormattingEnabled = true;
             this.cboxTypeOfUser.Location = new System.Drawing.Point(465, 250);
-            this.cboxTypeOfUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxTypeOfUser.Margin = new System.Windows.Forms.Padding(2);
             this.cboxTypeOfUser.Name = "cboxTypeOfUser";
             this.cboxTypeOfUser.Size = new System.Drawing.Size(185, 29);
             this.cboxTypeOfUser.Sorted = true;
@@ -202,7 +202,7 @@
             // 
             this.txtboxSuburbOp.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtboxSuburbOp.Location = new System.Drawing.Point(465, 98);
-            this.txtboxSuburbOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxSuburbOp.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxSuburbOp.Name = "txtboxSuburbOp";
             this.txtboxSuburbOp.Size = new System.Drawing.Size(185, 29);
             this.txtboxSuburbOp.TabIndex = 115;
@@ -222,7 +222,7 @@
             // 
             this.txtboxHouseNoOp.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtboxHouseNoOp.Location = new System.Drawing.Point(465, 59);
-            this.txtboxHouseNoOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxHouseNoOp.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxHouseNoOp.Name = "txtboxHouseNoOp";
             this.txtboxHouseNoOp.Size = new System.Drawing.Size(185, 29);
             this.txtboxHouseNoOp.TabIndex = 113;
@@ -253,7 +253,7 @@
             // 
             this.txtboxZipCodeOp.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtboxZipCodeOp.Location = new System.Drawing.Point(465, 136);
-            this.txtboxZipCodeOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxZipCodeOp.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxZipCodeOp.Name = "txtboxZipCodeOp";
             this.txtboxZipCodeOp.Size = new System.Drawing.Size(185, 29);
             this.txtboxZipCodeOp.TabIndex = 110;
@@ -263,7 +263,7 @@
             // 
             this.txtboxStreetOp.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtboxStreetOp.Location = new System.Drawing.Point(465, 24);
-            this.txtboxStreetOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxStreetOp.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxStreetOp.Name = "txtboxStreetOp";
             this.txtboxStreetOp.Size = new System.Drawing.Size(185, 29);
             this.txtboxStreetOp.TabIndex = 109;
@@ -283,7 +283,7 @@
             // 
             this.txtboxLastName1.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtboxLastName1.Location = new System.Drawing.Point(148, 60);
-            this.txtboxLastName1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxLastName1.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxLastName1.Name = "txtboxLastName1";
             this.txtboxLastName1.Size = new System.Drawing.Size(185, 29);
             this.txtboxLastName1.TabIndex = 107;
@@ -295,7 +295,7 @@
             this.datetpDOB.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datetpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.datetpDOB.Location = new System.Drawing.Point(148, 211);
-            this.datetpDOB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datetpDOB.Margin = new System.Windows.Forms.Padding(2);
             this.datetpDOB.Name = "datetpDOB";
             this.datetpDOB.Size = new System.Drawing.Size(185, 29);
             this.datetpDOB.TabIndex = 106;
@@ -381,7 +381,7 @@
             // 
             this.txtboxCellPhoneOp.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxCellPhoneOp.Location = new System.Drawing.Point(465, 211);
-            this.txtboxCellPhoneOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxCellPhoneOp.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxCellPhoneOp.Name = "txtboxCellPhoneOp";
             this.txtboxCellPhoneOp.Size = new System.Drawing.Size(185, 29);
             this.txtboxCellPhoneOp.TabIndex = 98;
@@ -391,7 +391,7 @@
             // 
             this.txtboxHomePhoneOp.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtboxHomePhoneOp.Location = new System.Drawing.Point(465, 172);
-            this.txtboxHomePhoneOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxHomePhoneOp.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxHomePhoneOp.Name = "txtboxHomePhoneOp";
             this.txtboxHomePhoneOp.Size = new System.Drawing.Size(185, 29);
             this.txtboxHomePhoneOp.TabIndex = 97;
@@ -401,7 +401,7 @@
             // 
             this.txtboxEmailOp.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtboxEmailOp.Location = new System.Drawing.Point(148, 136);
-            this.txtboxEmailOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxEmailOp.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxEmailOp.Name = "txtboxEmailOp";
             this.txtboxEmailOp.Size = new System.Drawing.Size(185, 29);
             this.txtboxEmailOp.TabIndex = 96;
@@ -410,7 +410,7 @@
             // 
             this.txtboxPayrollNum.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtboxPayrollNum.Location = new System.Drawing.Point(148, 173);
-            this.txtboxPayrollNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxPayrollNum.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxPayrollNum.Name = "txtboxPayrollNum";
             this.txtboxPayrollNum.Size = new System.Drawing.Size(185, 29);
             this.txtboxPayrollNum.TabIndex = 95;
@@ -420,7 +420,7 @@
             // 
             this.txtboxLastName2.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtboxLastName2.Location = new System.Drawing.Point(148, 98);
-            this.txtboxLastName2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxLastName2.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxLastName2.Name = "txtboxLastName2";
             this.txtboxLastName2.Size = new System.Drawing.Size(185, 29);
             this.txtboxLastName2.TabIndex = 94;
@@ -430,7 +430,7 @@
             // 
             this.txtboxFirstNameOp.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.txtboxFirstNameOp.Location = new System.Drawing.Point(148, 24);
-            this.txtboxFirstNameOp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtboxFirstNameOp.Margin = new System.Windows.Forms.Padding(2);
             this.txtboxFirstNameOp.Name = "txtboxFirstNameOp";
             this.txtboxFirstNameOp.Size = new System.Drawing.Size(185, 29);
             this.txtboxFirstNameOp.TabIndex = 93;
@@ -441,7 +441,7 @@
             this.cmboxUser.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmboxUser.FormattingEnabled = true;
             this.cmboxUser.Location = new System.Drawing.Point(158, 29);
-            this.cmboxUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmboxUser.Margin = new System.Windows.Forms.Padding(2);
             this.cmboxUser.Name = "cmboxUser";
             this.cmboxUser.Size = new System.Drawing.Size(248, 29);
             this.cmboxUser.TabIndex = 151;
@@ -451,7 +451,7 @@
             this.rbtnByRFC.AutoSize = true;
             this.rbtnByRFC.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnByRFC.Location = new System.Drawing.Point(546, 22);
-            this.rbtnByRFC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnByRFC.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnByRFC.Name = "rbtnByRFC";
             this.rbtnByRFC.Size = new System.Drawing.Size(154, 25);
             this.rbtnByRFC.TabIndex = 150;
@@ -464,7 +464,7 @@
             this.rbtnByEmail.AutoSize = true;
             this.rbtnByEmail.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnByEmail.Location = new System.Drawing.Point(548, 83);
-            this.rbtnByEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnByEmail.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnByEmail.Name = "rbtnByEmail";
             this.rbtnByEmail.Size = new System.Drawing.Size(87, 25);
             this.rbtnByEmail.TabIndex = 149;
@@ -477,7 +477,7 @@
             this.rbtnByName.AutoSize = true;
             this.rbtnByName.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnByName.Location = new System.Drawing.Point(546, 53);
-            this.rbtnByName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rbtnByName.Margin = new System.Windows.Forms.Padding(2);
             this.rbtnByName.Name = "rbtnByName";
             this.rbtnByName.Size = new System.Drawing.Size(88, 25);
             this.rbtnByName.TabIndex = 148;
@@ -489,7 +489,7 @@
             // 
             this.btnSearchUser.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.btnSearchUser.Location = new System.Drawing.Point(416, 27);
-            this.btnSearchUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearchUser.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearchUser.Name = "btnSearchUser";
             this.btnSearchUser.Size = new System.Drawing.Size(100, 32);
             this.btnSearchUser.TabIndex = 147;
@@ -511,7 +511,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 640);
+            this.ClientSize = new System.Drawing.Size(765, 519);
             this.Controls.Add(this.cmboxUser);
             this.Controls.Add(this.rbtnByRFC);
             this.Controls.Add(this.rbtnByEmail);
@@ -520,7 +520,7 @@
             this.Controls.Add(this.lblSearchUser);
             this.Controls.Add(this.pnlCRUDOp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CRUDUser_Form";
             this.Text = "CRUDUser_Form";
             this.pnlCRUDOp.ResumeLayout(false);

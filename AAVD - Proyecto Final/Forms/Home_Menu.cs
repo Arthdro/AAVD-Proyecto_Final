@@ -145,22 +145,25 @@ namespace AAVD___Proyecto_Final.Forms
         private void btnSMCRUDHotel_Click(object sender, EventArgs e)
         {
             CRUDHotel_Form crudHotel_Form = new CRUDHotel_Form();
+            lblTittle.Text = "Add Hotel";
             openChildForm(crudHotel_Form);
             crudHotel_Form.getSession(_currentUser);
-            hideSubMenu();
+            hideSubMenu();     
         }
 
         private void btnSMCRUDRooms_Click(object sender, EventArgs e)
         {
-            //..
-            //.. Code
-            //..
+            AddRooms_Form addRooms_Form = new AddRooms_Form();
+            lblTittle.Text = "Add Rooms";
+            openChildForm(addRooms_Form);
+            addRooms_Form.getSession(_currentUser);
             hideSubMenu();
         }
 
         private void btnSMCRUDEmployee_Click(object sender, EventArgs e)
         {
             CRUDUser_Form crudUser_Form = new CRUDUser_Form();
+            lblTittle.Text = "Add Employee";
             openChildForm(crudUser_Form);
             crudUser_Form.getSession(_currentUser);
             hideSubMenu();
@@ -169,6 +172,7 @@ namespace AAVD___Proyecto_Final.Forms
         private void btnCRUDClient_Click(object sender, EventArgs e)
         {
             CRUDClient_Form crudClient_Form = new CRUDClient_Form();
+            lblTittle.Text = "Add Client";
             openChildForm(crudClient_Form);
             crudClient_Form.getSession(_currentUser);
             hideSubMenu();

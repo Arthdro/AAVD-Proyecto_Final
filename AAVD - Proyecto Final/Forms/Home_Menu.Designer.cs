@@ -77,8 +77,9 @@
             this.pnlPrincipalMenu.Controls.Add(this.pnlLogo);
             this.pnlPrincipalMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlPrincipalMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnlPrincipalMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlPrincipalMenu.Name = "pnlPrincipalMenu";
-            this.pnlPrincipalMenu.Size = new System.Drawing.Size(305, 1021);
+            this.pnlPrincipalMenu.Size = new System.Drawing.Size(229, 609);
             this.pnlPrincipalMenu.TabIndex = 0;
             // 
             // pnlSMCheckAndCancel
@@ -88,9 +89,10 @@
             this.pnlSMCheckAndCancel.Controls.Add(this.btnSMCheckOut);
             this.pnlSMCheckAndCancel.Controls.Add(this.btnSMCheckIn);
             this.pnlSMCheckAndCancel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSMCheckAndCancel.Location = new System.Drawing.Point(0, 921);
+            this.pnlSMCheckAndCancel.Location = new System.Drawing.Point(0, 748);
+            this.pnlSMCheckAndCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlSMCheckAndCancel.Name = "pnlSMCheckAndCancel";
-            this.pnlSMCheckAndCancel.Size = new System.Drawing.Size(284, 160);
+            this.pnlSMCheckAndCancel.Size = new System.Drawing.Size(212, 130);
             this.pnlSMCheckAndCancel.TabIndex = 10;
             // 
             // btnSMCancelation
@@ -101,10 +103,11 @@
             this.btnSMCancelation.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSMCancelation.Image = global::AAVD___Proyecto_Final.Properties.Resources.cancelation_icon;
             this.btnSMCancelation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSMCancelation.Location = new System.Drawing.Point(0, 100);
+            this.btnSMCancelation.Location = new System.Drawing.Point(0, 82);
+            this.btnSMCancelation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSMCancelation.Name = "btnSMCancelation";
-            this.btnSMCancelation.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnSMCancelation.Size = new System.Drawing.Size(284, 50);
+            this.btnSMCancelation.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnSMCancelation.Size = new System.Drawing.Size(212, 41);
             this.btnSMCancelation.TabIndex = 2;
             this.btnSMCancelation.Text = "Cancel reservation";
             this.btnSMCancelation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -120,10 +123,11 @@
             this.btnSMCheckOut.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSMCheckOut.Image = global::AAVD___Proyecto_Final.Properties.Resources.CheckIn_icon;
             this.btnSMCheckOut.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSMCheckOut.Location = new System.Drawing.Point(0, 50);
+            this.btnSMCheckOut.Location = new System.Drawing.Point(0, 41);
+            this.btnSMCheckOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSMCheckOut.Name = "btnSMCheckOut";
-            this.btnSMCheckOut.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnSMCheckOut.Size = new System.Drawing.Size(284, 50);
+            this.btnSMCheckOut.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnSMCheckOut.Size = new System.Drawing.Size(212, 41);
             this.btnSMCheckOut.TabIndex = 1;
             this.btnSMCheckOut.Text = "Check out";
             this.btnSMCheckOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -140,9 +144,10 @@
             this.btnSMCheckIn.Image = global::AAVD___Proyecto_Final.Properties.Resources.CheckIn_icon;
             this.btnSMCheckIn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSMCheckIn.Location = new System.Drawing.Point(0, 0);
+            this.btnSMCheckIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSMCheckIn.Name = "btnSMCheckIn";
-            this.btnSMCheckIn.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnSMCheckIn.Size = new System.Drawing.Size(284, 50);
+            this.btnSMCheckIn.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnSMCheckIn.Size = new System.Drawing.Size(212, 41);
             this.btnSMCheckIn.TabIndex = 0;
             this.btnSMCheckIn.Text = "Check in";
             this.btnSMCheckIn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -159,9 +164,10 @@
             this.btnReservations.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnReservations.Image = global::AAVD___Proyecto_Final.Properties.Resources.reservation_icon;
             this.btnReservations.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReservations.Location = new System.Drawing.Point(0, 841);
+            this.btnReservations.Location = new System.Drawing.Point(0, 683);
+            this.btnReservations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnReservations.Name = "btnReservations";
-            this.btnReservations.Size = new System.Drawing.Size(284, 80);
+            this.btnReservations.Size = new System.Drawing.Size(212, 65);
             this.btnReservations.TabIndex = 9;
             this.btnReservations.Text = "Reservations";
             this.btnReservations.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -178,9 +184,10 @@
             this.btnAddReservation.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAddReservation.Image = global::AAVD___Proyecto_Final.Properties.Resources.reserva_icon;
             this.btnAddReservation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddReservation.Location = new System.Drawing.Point(0, 761);
+            this.btnAddReservation.Location = new System.Drawing.Point(0, 618);
+            this.btnAddReservation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddReservation.Name = "btnAddReservation";
-            this.btnAddReservation.Size = new System.Drawing.Size(284, 80);
+            this.btnAddReservation.Size = new System.Drawing.Size(212, 65);
             this.btnAddReservation.TabIndex = 8;
             this.btnAddReservation.Text = "Add reservation";
             this.btnAddReservation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,9 +204,10 @@
             this.btnCRUDClient.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnCRUDClient.Image = global::AAVD___Proyecto_Final.Properties.Resources.Client_icon;
             this.btnCRUDClient.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCRUDClient.Location = new System.Drawing.Point(0, 681);
+            this.btnCRUDClient.Location = new System.Drawing.Point(0, 553);
+            this.btnCRUDClient.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCRUDClient.Name = "btnCRUDClient";
-            this.btnCRUDClient.Size = new System.Drawing.Size(284, 80);
+            this.btnCRUDClient.Size = new System.Drawing.Size(212, 65);
             this.btnCRUDClient.TabIndex = 7;
             this.btnCRUDClient.Text = "Add / Edit / Delete Client";
             this.btnCRUDClient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -212,9 +220,10 @@
             this.pnlSMEmployeeManagment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.pnlSMEmployeeManagment.Controls.Add(this.btnSMCRUDEmployee);
             this.pnlSMEmployeeManagment.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSMEmployeeManagment.Location = new System.Drawing.Point(0, 621);
+            this.pnlSMEmployeeManagment.Location = new System.Drawing.Point(0, 504);
+            this.pnlSMEmployeeManagment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlSMEmployeeManagment.Name = "pnlSMEmployeeManagment";
-            this.pnlSMEmployeeManagment.Size = new System.Drawing.Size(284, 60);
+            this.pnlSMEmployeeManagment.Size = new System.Drawing.Size(212, 49);
             this.pnlSMEmployeeManagment.TabIndex = 6;
             // 
             // btnSMCRUDEmployee
@@ -226,9 +235,10 @@
             this.btnSMCRUDEmployee.Image = global::AAVD___Proyecto_Final.Properties.Resources.Edit_hotel;
             this.btnSMCRUDEmployee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSMCRUDEmployee.Location = new System.Drawing.Point(0, 0);
+            this.btnSMCRUDEmployee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSMCRUDEmployee.Name = "btnSMCRUDEmployee";
-            this.btnSMCRUDEmployee.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnSMCRUDEmployee.Size = new System.Drawing.Size(284, 50);
+            this.btnSMCRUDEmployee.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnSMCRUDEmployee.Size = new System.Drawing.Size(212, 41);
             this.btnSMCRUDEmployee.TabIndex = 0;
             this.btnSMCRUDEmployee.Text = "Add / Edit / Delete Employee(s)";
             this.btnSMCRUDEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -245,9 +255,10 @@
             this.btnEmployeeManagment.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnEmployeeManagment.Image = global::AAVD___Proyecto_Final.Properties.Resources.Employee_icon;
             this.btnEmployeeManagment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmployeeManagment.Location = new System.Drawing.Point(0, 541);
+            this.btnEmployeeManagment.Location = new System.Drawing.Point(0, 439);
+            this.btnEmployeeManagment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEmployeeManagment.Name = "btnEmployeeManagment";
-            this.btnEmployeeManagment.Size = new System.Drawing.Size(284, 80);
+            this.btnEmployeeManagment.Size = new System.Drawing.Size(212, 65);
             this.btnEmployeeManagment.TabIndex = 5;
             this.btnEmployeeManagment.Text = "Employee Managment";
             this.btnEmployeeManagment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -261,9 +272,10 @@
             this.pnlSMHotelManagment.Controls.Add(this.btnSMCRUDRooms);
             this.pnlSMHotelManagment.Controls.Add(this.btnSMCRUDHotel);
             this.pnlSMHotelManagment.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSMHotelManagment.Location = new System.Drawing.Point(0, 431);
+            this.pnlSMHotelManagment.Location = new System.Drawing.Point(0, 350);
+            this.pnlSMHotelManagment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlSMHotelManagment.Name = "pnlSMHotelManagment";
-            this.pnlSMHotelManagment.Size = new System.Drawing.Size(284, 110);
+            this.pnlSMHotelManagment.Size = new System.Drawing.Size(212, 89);
             this.pnlSMHotelManagment.TabIndex = 4;
             // 
             // btnSMCRUDRooms
@@ -274,10 +286,11 @@
             this.btnSMCRUDRooms.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSMCRUDRooms.Image = global::AAVD___Proyecto_Final.Properties.Resources.Edit_hotel;
             this.btnSMCRUDRooms.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSMCRUDRooms.Location = new System.Drawing.Point(0, 50);
+            this.btnSMCRUDRooms.Location = new System.Drawing.Point(0, 41);
+            this.btnSMCRUDRooms.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSMCRUDRooms.Name = "btnSMCRUDRooms";
-            this.btnSMCRUDRooms.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnSMCRUDRooms.Size = new System.Drawing.Size(284, 50);
+            this.btnSMCRUDRooms.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnSMCRUDRooms.Size = new System.Drawing.Size(212, 41);
             this.btnSMCRUDRooms.TabIndex = 1;
             this.btnSMCRUDRooms.Text = "Add / Edit / Delete Room(s)";
             this.btnSMCRUDRooms.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -294,9 +307,10 @@
             this.btnSMCRUDHotel.Image = global::AAVD___Proyecto_Final.Properties.Resources.Edit_hotel;
             this.btnSMCRUDHotel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSMCRUDHotel.Location = new System.Drawing.Point(0, 0);
+            this.btnSMCRUDHotel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSMCRUDHotel.Name = "btnSMCRUDHotel";
-            this.btnSMCRUDHotel.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnSMCRUDHotel.Size = new System.Drawing.Size(284, 50);
+            this.btnSMCRUDHotel.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnSMCRUDHotel.Size = new System.Drawing.Size(212, 41);
             this.btnSMCRUDHotel.TabIndex = 0;
             this.btnSMCRUDHotel.Text = "Add / Edit / Delete Hotel";
             this.btnSMCRUDHotel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -313,9 +327,10 @@
             this.btnHotelManagment.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnHotelManagment.Image = global::AAVD___Proyecto_Final.Properties.Resources.hotel_icon;
             this.btnHotelManagment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHotelManagment.Location = new System.Drawing.Point(0, 351);
+            this.btnHotelManagment.Location = new System.Drawing.Point(0, 285);
+            this.btnHotelManagment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHotelManagment.Name = "btnHotelManagment";
-            this.btnHotelManagment.Size = new System.Drawing.Size(284, 80);
+            this.btnHotelManagment.Size = new System.Drawing.Size(212, 65);
             this.btnHotelManagment.TabIndex = 3;
             this.btnHotelManagment.Text = "Hotel Managment";
             this.btnHotelManagment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -329,9 +344,10 @@
             this.pnlSMSystemReport.Controls.Add(this.btnSMCustomerRecord);
             this.pnlSMSystemReport.Controls.Add(this.btnSMSalesReport);
             this.pnlSMSystemReport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSMSystemReport.Location = new System.Drawing.Point(0, 191);
+            this.pnlSMSystemReport.Location = new System.Drawing.Point(0, 155);
+            this.pnlSMSystemReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlSMSystemReport.Name = "pnlSMSystemReport";
-            this.pnlSMSystemReport.Size = new System.Drawing.Size(284, 160);
+            this.pnlSMSystemReport.Size = new System.Drawing.Size(212, 130);
             this.pnlSMSystemReport.TabIndex = 2;
             // 
             // btnSMHotelOccupancy
@@ -343,10 +359,11 @@
             this.btnSMHotelOccupancy.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSMHotelOccupancy.Image = global::AAVD___Proyecto_Final.Properties.Resources.hotel_occupancy_icon;
             this.btnSMHotelOccupancy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSMHotelOccupancy.Location = new System.Drawing.Point(0, 100);
+            this.btnSMHotelOccupancy.Location = new System.Drawing.Point(0, 82);
+            this.btnSMHotelOccupancy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSMHotelOccupancy.Name = "btnSMHotelOccupancy";
-            this.btnSMHotelOccupancy.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnSMHotelOccupancy.Size = new System.Drawing.Size(284, 50);
+            this.btnSMHotelOccupancy.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnSMHotelOccupancy.Size = new System.Drawing.Size(212, 41);
             this.btnSMHotelOccupancy.TabIndex = 2;
             this.btnSMHotelOccupancy.Text = "Hotel Occupancy";
             this.btnSMHotelOccupancy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -363,10 +380,11 @@
             this.btnSMCustomerRecord.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSMCustomerRecord.Image = global::AAVD___Proyecto_Final.Properties.Resources.customer_historial_icon;
             this.btnSMCustomerRecord.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSMCustomerRecord.Location = new System.Drawing.Point(0, 50);
+            this.btnSMCustomerRecord.Location = new System.Drawing.Point(0, 41);
+            this.btnSMCustomerRecord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSMCustomerRecord.Name = "btnSMCustomerRecord";
-            this.btnSMCustomerRecord.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnSMCustomerRecord.Size = new System.Drawing.Size(284, 50);
+            this.btnSMCustomerRecord.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnSMCustomerRecord.Size = new System.Drawing.Size(212, 41);
             this.btnSMCustomerRecord.TabIndex = 1;
             this.btnSMCustomerRecord.Text = "Customer record";
             this.btnSMCustomerRecord.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -384,9 +402,10 @@
             this.btnSMSalesReport.Image = global::AAVD___Proyecto_Final.Properties.Resources.sales_icon;
             this.btnSMSalesReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSMSalesReport.Location = new System.Drawing.Point(0, 0);
+            this.btnSMSalesReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSMSalesReport.Name = "btnSMSalesReport";
-            this.btnSMSalesReport.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.btnSMSalesReport.Size = new System.Drawing.Size(284, 50);
+            this.btnSMSalesReport.Padding = new System.Windows.Forms.Padding(22, 0, 0, 0);
+            this.btnSMSalesReport.Size = new System.Drawing.Size(212, 41);
             this.btnSMSalesReport.TabIndex = 0;
             this.btnSMSalesReport.Text = "Sales report";
             this.btnSMSalesReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -403,9 +422,10 @@
             this.btnSystemReport.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSystemReport.Image = global::AAVD___Proyecto_Final.Properties.Resources.System_report;
             this.btnSystemReport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSystemReport.Location = new System.Drawing.Point(0, 111);
+            this.btnSystemReport.Location = new System.Drawing.Point(0, 90);
+            this.btnSystemReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSystemReport.Name = "btnSystemReport";
-            this.btnSystemReport.Size = new System.Drawing.Size(284, 80);
+            this.btnSystemReport.Size = new System.Drawing.Size(212, 65);
             this.btnSystemReport.TabIndex = 1;
             this.btnSystemReport.Text = "System report";
             this.btnSystemReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -418,8 +438,9 @@
             this.pnlLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlLogo.Name = "pnlLogo";
-            this.pnlLogo.Size = new System.Drawing.Size(284, 111);
+            this.pnlLogo.Size = new System.Drawing.Size(212, 90);
             this.pnlLogo.TabIndex = 0;
             // 
             // pnlTittle
@@ -427,9 +448,10 @@
             this.pnlTittle.BackColor = System.Drawing.Color.Teal;
             this.pnlTittle.Controls.Add(this.lblTittle);
             this.pnlTittle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTittle.Location = new System.Drawing.Point(305, 0);
+            this.pnlTittle.Location = new System.Drawing.Point(229, 0);
+            this.pnlTittle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlTittle.Name = "pnlTittle";
-            this.pnlTittle.Size = new System.Drawing.Size(1021, 111);
+            this.pnlTittle.Size = new System.Drawing.Size(765, 90);
             this.pnlTittle.TabIndex = 1;
             // 
             // lblTittle
@@ -438,9 +460,10 @@
             this.lblTittle.BackColor = System.Drawing.Color.Transparent;
             this.lblTittle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTittle.ForeColor = System.Drawing.Color.White;
-            this.lblTittle.Location = new System.Drawing.Point(481, 42);
+            this.lblTittle.Location = new System.Drawing.Point(361, 34);
+            this.lblTittle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTittle.Name = "lblTittle";
-            this.lblTittle.Size = new System.Drawing.Size(109, 29);
+            this.lblTittle.Size = new System.Drawing.Size(87, 25);
             this.lblTittle.TabIndex = 0;
             this.lblTittle.Text = "H O M E";
             // 
@@ -448,24 +471,26 @@
             // 
             this.pnlChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
             this.pnlChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlChildForm.Location = new System.Drawing.Point(305, 111);
+            this.pnlChildForm.Location = new System.Drawing.Point(229, 90);
+            this.pnlChildForm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlChildForm.Name = "pnlChildForm";
-            this.pnlChildForm.Size = new System.Drawing.Size(1021, 910);
+            this.pnlChildForm.Size = new System.Drawing.Size(765, 519);
             this.pnlChildForm.TabIndex = 2;
             // 
             // Home_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1326, 1021);
+            this.ClientSize = new System.Drawing.Size(994, 609);
             this.Controls.Add(this.pnlChildForm);
             this.Controls.Add(this.pnlTittle);
             this.Controls.Add(this.pnlPrincipalMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MinimumSize = new System.Drawing.Size(550, 600);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(416, 495);
             this.Name = "Home_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home menu - [ Nombre por asignar ]";

@@ -120,6 +120,12 @@
   <ItemGroup>
     <Compile Include="DB\Managment.cs" />
     <Compile Include="DAO\User_DataDAO.cs" />
+    <Compile Include="Forms\AddRooms_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddRooms_Form.Designer.cs">
+      <DependentUpon>AddRooms_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CRUDClient_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     <Compile Include="Models\User_data.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AddRooms_Form.resx">
+      <DependentUpon>AddRooms_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CRUDClient_Form.resx">
       <DependentUpon>CRUDClient_Form.cs</DependentUpon>
     </EmbeddedResource>

@@ -170,7 +170,7 @@
             this.pnlCRUDClient.Controls.Add(this.txtboxEmailClient);
             this.pnlCRUDClient.Controls.Add(this.txtboxLN2Client);
             this.pnlCRUDClient.Controls.Add(this.txtboxFNClient);
-            this.pnlCRUDClient.Location = new System.Drawing.Point(21, 114);
+            this.pnlCRUDClient.Location = new System.Drawing.Point(42, 115);
             this.pnlCRUDClient.Margin = new System.Windows.Forms.Padding(2);
             this.pnlCRUDClient.Name = "pnlCRUDClient";
             this.pnlCRUDClient.Size = new System.Drawing.Size(688, 354);
@@ -485,7 +485,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 601);
+            this.ClientSize = new System.Drawing.Size(765, 519);
             this.Controls.Add(this.cmboxClient);
             this.Controls.Add(this.rbtnByRFC);
             this.Controls.Add(this.rbtnByEmail);
