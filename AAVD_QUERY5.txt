@@ -1,0 +1,117 @@
+
+ // DATA TYPES
+ CREATE TYPE IF NOT EXISTS HOTEL_SYSTEM.ADDRESS(
+	street_name varchar,
+	ext_num varchar,
+	district varchar,
+	zipcode varchar	
+);
+
+ CREATE TYPE IF NOT EXISTS HOTEL_SYSTEM.PHONES(
+ 	BC_PhoneNumer varchar,
+ 	CellPhone varchar
+ );
+ // FINAL DATA TYPES
+ 
+ // USER_DATA
+ DELETE FROM HOTEL_SYSTEM.USER_DATA WHERE userID = 7ca9c03c-f8f7-403d-aa7e-cd549cb9853b
+ DROP TABLE HOTEL_SYSTEM.USER_DATA;
+ SELECT * FROM HOTEL_SYSTEM.USER_DATA;
+ 
+ UPDATE HOTEL_SYSTEM.USER_DATA
+ SET type = 'ADMIN' 
+ WHERE userID = 1b68dc8d-7c4b-4c5c-8dbc-6291f5db6472
+ 
+ CREATE TABLE IF NOT EXISTS HOTEL_SYSTEM.USER_DATA(
+  	userID UUID,
+ 	userEmail varchar,
+ 	userPassword varchar,
+ 	fullName varchar,
+    dateOfBirth varchar,
+    payrollNumber varchar,
+    Address frozen<ADDRESS>,
+    Phones frozen <PHONES>,
+ 	status tinyint,
+ 	type varchar,
+ 	user_crea UUID,
+ 	date_crea timestamp,
+ 	user_modif UUID,
+ 	date_modif timestamp,
+ 	PRIMARY KEY (userID)
+ );
+ 
+ INSERT INTO HOTEL_SYSTEM.USER_DATA (userID, userEmail, userPassword, fullName, dateOfBirth, 
+ 	payrollNumber, Address, Phones, status, type, user_crea, date_crea, user_modif, date_modif)
+VALUES(UUID(), 'arturo.palomo@axolotl.com.mx', 'Hola12345*', 'Arturo Palomo Ornelas', 
+'10/04/1999', '05489621354', {street_name: 'Casa de San Telmo', ext_num: '313 PB', 
+	district: 'Las Misiones', zipcode:'66428'}, {BC_PhoneNumer: '8188832493', CellPhone: '8127663463'},
+	 0, 'ADMIN', bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now())), 
+	 bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now()))) IF NOT EXISTS;
+	 
+// Final USER_DATA
+ 
+// HOTEL_DATA 
+ SELECT * FROM HOTEL_SYSTEM.HOTEL_DATA;
+ 
+ CREATE TABLE HOTEL_SYSTEM.HOTEL_DATA(
+	 hotelID UUID,
+	 hotelName varchar,
+	 location frozen<address>, 
+ 	 status tinyint,
+ 	 countryID tinyint,
+ 	 stateID smallint,
+ 	 cityID smallint,
+ 	 begin_operation varchar,
+ 	 floors tinyint,
+ 	 rooms smallint,
+ 	 turistic_zone varchar,
+ 	 user_crea UUID,
+ 	 date_crea timestamp,
+ 	 user_modif UUID,
+ 	 date_modif timestamp,
+ 	 PRIMARY KEY (hotelID)	
+);
+
+INSERT INTO HOTEL_SYSTEM.HOTEL_DATA(hotelID, hotelName, location, status, countryID, stateID,
+	cityID, begin_operation, floors, rooms, turistic_zone, user_crea, date_crea, user_modif, date_modif)
+VALUES (UUID(), 'Hotel 88 INN', {street_name: 'Av Lerdo de Tejada', ext_num: '767', district: 'Tabachines', zipcode: '66420'}, 0, 56, 19, 46, '05/03/1987', 3, 25, 'La alameda', 
+ bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now())), 
+	 bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now()))) IF NOT EXISTS;
+// Final HOTEL_DATA
+
+// CLIENT DATA
+ DROP TABLE HOTEL_SYSTEM.CLIENT_DATA;
+ SELECT * FROM HOTEL_SYSTEM.CLIENT_DATA;
+ 
+ CREATE TABLE IF NOT EXISTS HOTEL_SYSTEM.CLIENT_DATA(
+  	clientID UUID,
+ 	fullName varchar,
+    address frozen<ADDRESS>,    
+    rfc varchar,
+    email varchar,
+    phones frozen <PHONES>,
+    dateOfBirth varchar,
+    status tinyint,
+    reference varchar,
+ 	user_crea UUID,
+ 	date_crea timestamp,
+ 	user_modif UUID,
+ 	date_modif timestamp,
+ 	PRIMARY KEY (clientID)
+ );
+ 
+ INSERT INTO HOTEL_SYSTEM.CLIENT_DATA (clientID, fullName, address, rfc, email,
+    phones, dateOfBirth, status, reference, user_crea, date_crea, user_modif,date_modif)
+ VALUES (UUID(), 'Rebeca García Vargas', {street_name: 'Rio Nazas', ext_num: '245 A', district: 'Mitras Centro', zipcode: '66630'}, 
+ 	'GVRE980909574', 'greysanatomy@gmail.com', {BC_PhoneNumer: 'Rio Nazas', CellPhone: '245 A'}, '09/09/1998', 
+ 	0, '', bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now())), 
+	 bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now()))) IF NOT EXISTS;
+//
+
+
+
+SELECT * FROM HOTEL_SYSTEM.CITY_DATA;
+SELECT * FROM HOTEL_SYSTEM.STATE_DATA;
+SELECT * FROM HOTEL_SYSTEM.COUNTRY_DATA;
+
+

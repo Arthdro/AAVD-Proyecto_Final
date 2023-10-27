@@ -1,0 +1,116 @@
+CREATE KEYSPACE IF NOT EXISTS HOTEL_SYSTEM WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
+ 
+ 
+ CREATE TABLE HOTEL_SYSTEM.PASSWORD_COUNTER(
+ 	userName varchar,
+ 	wrong_password counter,
+ 	PRIMARY KEY (userName)
+ );
+ 
+ Select userID, 
+userEmail, 
+userPassword, 
+fullName, 
+dateOfBirth,
+payrollNumber, 
+Address.street_name AS street_name, 
+Address.ext_num AS ext_num,
+Address.district AS district,
+Address.zipcode AS zipcode,
+Phones.BC_PhoneNumer AS BC_PhoneNumer,
+Phones.CellPhone AS CellPhone,
+status,
+type
+FROM HOTEL_SYSTEM.USER_DATA 
+WHERE userEmail = 'arturo.palomo@axolot.com.mx' AND userPassword = 'Hola12345*' ALLOW FILTERING;
+ //WHERE userName = 'OwO' AND userPassword = 'Hola12345*' ALLOW FILTERING;
+ //DROP TYPE HOTEL_SYSTEM.ADDRESS
+ 
+ /*INSERT INTO HOTEL_SYSTEM.USER_DATA (userName, userPassword, names, f_lastname, s_lastname, status, type)
+VALUES('OwO', 'Hola12345*', 'Arturo', 'Palomo', 'Ornelas', 0, 0) IF NOT EXISTS;*/
+
+Update HOTEL_SYSTEM.PASSWORD_COUNTER SET wrong_password = wrong_password + 1 
+WHERE userName = 'OwO';
+
+SELECT * FROM HOTEL_SYSTEM.PASSWORD_COUNTER;
+
+//UPDATE HOTEL_SYSTEM.USER_DATA SET password_count = password_count + 1 WHERE userName = 'OwO';
+
+DROP TABLE HOTEL_SYSTEM.USER_DATA;
+
+
+ INSERT INTO HOTEL_SYSTEM.USER_DATA (userID, userEmail, userPassword, fullName, dateOfBirth, 
+ 	payrollNumber, Address, Phones, status, type)
+VALUES(UUID(), 'arturo.palomo@axolot.com.mx', 'Hola12345*', 'Arturo Palomo Ornelas', 
+'1999-04-10', '05489621354', {street_name: 'Casa de San Telmo', ext_num: '313 PB', 
+	district: 'Las Misiones', zipcode:'66428'}, {BC_PhoneNumer: '8188832493', CellPhone: '8127663463'},
+	 0, 'ADMIN') IF NOT EXISTS;
+
+
+
+
+
+/****************************************************************************************************************/SELECT *  FROM HOTEL_SYSTEM.USER_DATA;
+DROP TABLE HOTEL_SYSTEM.USER_DATA;
+
+INSERT INTO HOTEL_SYSTEM.USER_DATA (userID, userEmail, userPassword, fullName, dateOfBirth, 
+ 	payrollNumber, Address, Phones, status, type, user_crea, date_crea, user_modif, date_modif)
+VALUES(UUID(), 'arturo.palomo@axolot.com.mx', 'Hola12345*', 'Arturo Palomo Ornelas', 
+'1999-04-10', '05489621354', {street_name: 'Casa de San Telmo', ext_num: '313 PB', 
+	district: 'Las Misiones', zipcode:'66428'}, {BC_PhoneNumer: '8188832493', CellPhone: '8127663463'},
+	 0, 'ADMIN', bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now())), 
+	 bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now()))) IF NOT EXISTS;
+
+CREATE TABLE HOTEL_SYSTEM.USER_DATA(
+  	userID UUID,
+ 	userEmail varchar,
+ 	userPassword varchar,
+ 	fullName varchar,
+    dateOfBirth varchar,
+    payrollNumber varchar,
+    Address frozen<USER_ADDRESS>,
+    Phones frozen <USER_PHONES>,
+ 	status tinyint,
+ 	type varchar,
+ 	user_crea UUID,
+ 	date_crea timestamp,
+ 	user_modif UUID,
+ 	date_modif timestamp,
+ 	PRIMARY KEY (userID)
+ );
+ 
+ INSERT INTO HOTEL_SYSTEM.USER_DATA (userID, userEmail, userPassword, fullName, dateOfBirth,
+ 	payrollNumber, Address, Phones, status, type, user_crea, date_crea, user_modif, date_modif)
+ VALUES (UUID(), 'susana.salazar@axolot.com.mx', 'OwO/12345', 'Susana Deyanira Salazar Mata', 
+ '1996-07-01', '03152648591', {street_name: 'Rio Nazas', ext_num: '245 A', district: 'Mitras Centro', zipcode: '66630'}, {BC_PhoneNumer: '8182967456', CellPhone: '8180854521'}, 0, 'OPERATOR', UUID(), toTimestamp(toDate(now())), UUID(), toTimestamp(toDate(now()))) IF NOT EXISTS;
+ 
+ SELECT * FROM HOTEL_SYSTEM.USER_DATA;
+ 
+ 
+ /***********************************************************************************/
+ CREATE TABLE HOTEL_SYSTEM.CLIENT_DATA(
+  	clientID UUID,
+ 	fullName varchar,
+    address frozen<USER_ADDRESS>,    
+    rfc varchar,
+    email varchar,
+    phones frozen <USER_PHONES>,
+    dateOfBirth varchar,
+    status tinyint,
+ 	user_crea UUID,
+ 	date_crea timestamp,
+ 	user_modif UUID,
+ 	date_modif timestamp,
+ 	PRIMARY KEY (clientID)
+ );
+ 
+ SELECT * FROM HOTEL_SYSTEM.CLIENT_DATA;
+ DROP TABLE HOTEL_SYSTEM.CLIENT_DATA;
+ 
+ INSERT INTO HOTEL_SYSTEM.CLIENT_DATA (clientID, fullName, address, rfc, email,
+    phones, dateOfBirth, status, user_crea, date_crea, user_modif,date_modif)
+ VALUES (UUID(), 'Rebeca García Vargas', {street_name: 'Rio Nazas', ext_num: '245 A', district: 'Mitras Centro', zipcode: '66630'}, 
+ 	'GVRE980909574', 'greysanatomy@gmail.com', {BC_PhoneNumer: 'Rio Nazas', CellPhone: '245 A'}, '1998-09-09', 
+ 	0,  bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now())), 
+	 bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now()))) IF NOT EXISTS;
+ 

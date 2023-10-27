@@ -1,0 +1,35 @@
+CREATE KEYSPACE [IF NOT EXISTS] HOTEL_SYSTEM 
+  WITH REPLICATION = { 
+   'class' : 'SimpleStrategy', 
+   'replication_factor' : 1 
+  };
+  
+  
+ /*CREATE TABLE [IF NOT EXISTS] HOTEL_SYSTEM.USER_DATA(
+ 	user_ID text,
+ 	names text,
+ 	f_lastname text,
+ 	s_lastname text,	
+ );*/
+
+
+ CREATE TABLE HOTEL_SYSTEM.USER_DATA(
+ 	userName text,
+ 	userPassword text,
+ 	names text,
+ 	f_lastname text,
+ 	s_lastname text,
+ 	status tinyint,
+ 	type tinyint,
+ 	PRIMARY KEY (userName)
+ );
+ 
+ SELECT * FROM HOTEL_SYSTEM.USER_DATA 
+ WHERE userName = 'OwO' AND userPassword = 'Hola12345*' ALLOW FILTERING;
+ 
+INSERT INTO HOTEL_SYSTEM.USER_DATA (userName, userPassword, names, f_lastname, s_lastname, status, type)
+VALUES('OwO', 'Hola12345*', 'Arturo', 'Palomo', 'Ornelas', 0, 0);
+
+
+
+DROP TABLE HOTEL_SYSTEM.USER_DATA;

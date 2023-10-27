@@ -1,0 +1,210 @@
+SELECT * FROM HOTEL_SYSTEM.CLIENT_DATA;
+SELECT * FROM HOTEL_SYSTEM.USER_DATA;
+
+
+SELECT * FROM HOTEL_SYSTEM.COUNTRY_DATA;
+
+CREATE TABLE HOTEL_SYSTEM.COUNTRY_DATA(
+	countryID smallint,
+ 	countryName varchar,
+ 	countryAbbrevation varchar,
+ 	status tinyint,
+ 	PRIMARY KEY (countryID)	
+);
+
+INSERT INTO HOTEL_SYSTEM.COUNTRY_DATA (countryID, countryName, countryAbbrevation, status)
+VALUES (56, 'Estados Unidos Mexicanos', 'MX', 0);
+
+INSERT INTO HOTEL_SYSTEM.COUNTRY_DATA (countryID, countryName, countryAbbrevation, status)
+VALUES (2, 'Alemania', 'DE', 0);
+
+INSERT INTO HOTEL_SYSTEM.COUNTRY_DATA (countryID, countryName, countryAbbrevation, status)
+VALUES (48, 'Estado de Israel', 'IL', 0) IF NOT EXISTS;
+
+INSERT INTO HOTEL_SYSTEM.COUNTRY_DATA (countryID, countryName, countryAbbrevation, status)
+VALUES (60, 'Estados Unidos', 'EU', 0) IF NOT EXISTS;
+
+CREATE TABLE HOTEL_SYSTEM.STATE_DATA(
+	stateID smallint,
+ 	stateName varchar,
+ 	stateAbbrevation varchar,
+ 	status tinyint,
+ 	countryID smallint,
+ 	PRIMARY KEY (stateID)	
+);
+
+DROP TABLE HOTEL_SYSTEM.STATE_DATA;
+
+INSERT INTO HOTEL_SYSTEM.STATE_DATA (stateID, stateName, stateAbbrevation, status, countryID)
+VALUES (19, 'Nuevo León', 'N.L', 0, 56);
+
+INSERT INTO HOTEL_SYSTEM.STATE_DATA (stateID, stateName, stateAbbrevation, status, countryID)
+VALUES (1, 'Aguascalientes', 'A.S', 0, 56);
+
+INSERT INTO HOTEL_SYSTEM.STATE_DATA (stateID, stateName, stateAbbrevation, status, countryID)
+VALUES (7, 'Ciudad de México', 'D.F', 0, 56);
+
+SELECT * FROM HOTEL_SYSTEM.STATE_DATA;
+
+SELECT countryID, countryName FROM HOTEL_SYSTEM.COUNTRY_DATA
+WHERE status = 0 ALLOW FILTERING;
+
+SELECT stateID, statename FROM HOTEL_SYSTEM.STATE_DATA
+WHERE countryid = 56 ALLOW FILTERING;
+
+
+SELECT stateID, statename FROM HOTEL_SYSTEM.STATE_DATA 
+WHERE countryid = 56 AND status = 0 ALLOW FILTERING;
+
+SELECT * FROM HOTEL_SYSTEM.STATE_DATA;
+
+CREATE TABLE HOTEL_SYSTEM.CITY_DATA(
+	cityID smallint,
+ 	cityName varchar,
+ 	status tinyint,
+ 	stateID smallint,
+ 	PRIMARY KEY (cityID)	
+);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (1, 'Abasolo', 0, 19);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (19, 'San Pedro Garza García', 0, 19);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (46, 'San Nicolas de los Garza', 0, 19);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (39, 'Monterrey', 0, 19);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (26, 'Guadalupe', 0, 19);
+
+SELECT cityID, cityName FROM HOTEL_SYSTEM.CITY_DATA WHERE stateID = 19 AND status = 0 ALLOW FILTERING;
+
+SELECT * FROM HOTEL_SYSTEM.CLIENT_DATA;
+SELECT * FROM HOTEL_SYSTEM.USER_DATA;
+
+
+SELECT * FROM HOTEL_SYSTEM.COUNTRY_DATA;
+
+CREATE TABLE HOTEL_SYSTEM.COUNTRY_DATA(
+	countryID smallint,
+ 	countryName varchar,
+ 	countryAbbrevation varchar,
+ 	status tinyint,
+ 	PRIMARY KEY (countryID)	
+);
+
+INSERT INTO HOTEL_SYSTEM.COUNTRY_DATA (countryID, countryName, countryAbbrevation, status)
+VALUES (56, 'Estados Unidos Mexicanos', 'MX', 0) IF NOT EXISTS;
+
+INSERT INTO HOTEL_SYSTEM.COUNTRY_DATA (countryID, countryName, countryAbbrevation, status)
+VALUES (2, 'Alemania', 'DE', 0) IF NOT EXISTS;
+
+INSERT INTO HOTEL_SYSTEM.COUNTRY_DATA (countryID, countryName, countryAbbrevation, status)
+VALUES (48, 'Estado de Israel', 'IL', 0) IF NOT EXISTS;
+
+INSERT INTO HOTEL_SYSTEM.COUNTRY_DATA (countryID, countryName, countryAbbrevation, status)
+VALUES (60, 'Estados Unidos', 'EU', 0) IF NOT EXISTS;
+
+DROP TABLE HOTEL_SYSTEM.STATE_DATA;
+CREATE TABLE HOTEL_SYSTEM.STATE_DATA(
+	stateID smallint,
+ 	stateName varchar,
+ 	stateAbbrevation varchar,
+ 	status tinyint,
+ 	countryID smallint,
+ 	PRIMARY KEY (stateID)	
+);
+
+DROP TABLE HOTEL_SYSTEM.STATE_DATA;
+
+INSERT INTO HOTEL_SYSTEM.STATE_DATA (stateID, stateName, stateAbbrevation, status, countryID)
+VALUES (19, 'Nuevo León', 'N.L', 0, 56) IF NOT EXISTS;
+
+INSERT INTO HOTEL_SYSTEM.STATE_DATA (stateID, stateName, stateAbbrevation, status, countryID)
+VALUES (1, 'Aguascalientes', 'A.S', 0, 56) IF NOT EXISTS;
+
+INSERT INTO HOTEL_SYSTEM.STATE_DATA (stateID, stateName, stateAbbrevation, status, countryID)
+VALUES (7, 'Ciudad de México', 'D.F', 0, 56) IF NOT EXISTS;
+
+INSERT INTO HOTEL_SYSTEM.STATE_DATA (stateID, stateName, stateAbbrevation, status, countryID)
+VALUES (44, 'Texas', 'T.X', 0, 60) IF NOT EXISTS;
+
+INSERT INTO HOTEL_SYSTEM.STATE_DATA (stateID, stateName, stateAbbrevation, status, countryID)
+VALUES (32, 'New York', 'N.Y', 0, 60) IF NOT EXISTS;
+
+INSERT INTO HOTEL_SYSTEM.STATE_DATA (stateID, stateName, stateAbbrevation, status, countryID)
+VALUES (33, 'New Mexico', 'N.M', 0, 60) IF NOT EXISTS;
+
+SELECT * FROM HOTEL_SYSTEM.STATE_DATA;
+
+DELETE FROM HOTEL_SYSTEM.STATE_DATA WHERE stateID = 32
+
+SELECT countryID, countryName FROM HOTEL_SYSTEM.COUNTRY_DATA
+WHERE status = 0 ALLOW FILTERING;
+
+SELECT stateID, statename FROM HOTEL_SYSTEM.STATE_DATA
+WHERE countryid = 56 ALLOW FILTERING;
+
+
+SELECT stateID, statename FROM HOTEL_SYSTEM.STATE_DATA 
+WHERE countryid = 56 AND status = 0 ALLOW FILTERING;
+
+SELECT * FROM HOTEL_SYSTEM.STATE_DATA;
+
+CREATE TABLE HOTEL_SYSTEM.CITY_DATA(
+	cityID smallint,
+ 	cityName varchar,
+ 	status tinyint,
+ 	stateID smallint,
+ 	PRIMARY KEY (cityID)	
+);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (1, 'Abasolo', 0, 19);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (19, 'San Pedro Garza García', 0, 19);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (46, 'San Nicolas de los Garza', 0, 19);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (39, 'Monterrey', 0, 19);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (26, 'Guadalupe', 0, 19);
+
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (40, 'Rochester', 0, 32);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (49, 'Yonkers', 0, 32);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (26, 'Mount Vernon', 0, 32);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (89, 'Utica', 0, 32);
+
+INSERT INTO HOTEL_SYSTEM.CITY_DATA (cityID, cityName, status, stateID)
+VALUES (76, 'Buffalo', 0, 32);
+
+SELECT cityID, cityName FROM HOTEL_SYSTEM.CITY_DATA WHERE stateID = 19 AND status = 0 ALLOW FILTERING;
+
+SELECT * FROM HOTEL_SYSTEM.USER_DATA;
+SELECT * FROM HOTEL_SYSTEM.CITY_DATA;
+
+
+CREATE TABLE HOTEL_SYSTEM.HOTEL_DATA(
+	hotelID UUID,
+	hotel_name varchar,
+ 	location frozen<address>,
+ 	status tinyint,
+ 	stateID smallint,
+ 	PRIMARY KEY (cityID)	
+);

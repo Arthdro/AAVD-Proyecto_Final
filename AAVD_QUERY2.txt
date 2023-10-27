@@ -1,0 +1,107 @@
+CREATE TABLE IF NOT EXISTs hotel_system.hotel_data(
+	hotelID UUID,
+	name varchar,
+	room int, 
+	branch varchar,
+	location frozen<address>, //TYPE 
+	//location frozen <List<address>>
+	primary key (hotelID)
+	
+);
+
+CREATE TYPE IF NOT EXISTS hotel_system.address(
+	street varchar,
+	exterior_num varchar,
+	district varchar,
+	zipcode varchar	
+);
+
+//INSERT INTO HOTELES (hotelID, name, rooms, location)
+//VALUES (UUID(), 'Holiday Inn', 2, {street: 'gonzalitos', exterior_num: '10', 
+//district: 'La Coyotera', zipcode: '66428'})A
+
+//Para seleccionar solo una cosa, sería location.district
+//DROP TABLE para borrar TODA LA TABLA
+
+//Agregar, modificar o cambiar una columna 
+//ALTER TABLE TABLA_NOMBRE ADD NOMBRE_DATA VARCHAR;
+//ALTER TABLE TABLA_NOMBRE DROP NOMBRE_DATA;
+//ALTER TABLE TABLA NOMBRE RENAME NOMBRE_DATA TO NOMBRE_DATO; Solo sirve para renombrar la primary key
+
+//UPDATE
+// UPDATE Hoteles SET NAME = 'Inn Holida' WHERE idHotel = adfs;
+//Si lo que se quiere modificar no existe, lo crea 
+//Al final, se pone IF EXISTS
+// UPDATE Hoteles SET NAME = 'Inn Holida' WHERE idHotel = adfs IF EXISTS;
+// UPDATE Hoteles SET location = {street: 'Fidel Velasquez'} WHERE idHotel = adfs IF EXISTS;
+// En el caso de arriba, como solo se actualizó un dato de los 4, los datos que no se quería
+// actualizar quedaron en nulos
+// 
+// Delete FROM HOTELES WHERE IDHOTEL = KNADNANJAD;
+//
+
+Select userID, 
+userEmail, 
+userPassword, 
+fullName, 
+dateOfBirth,
+payrollNumber, 
+Address.street_name AS street_name, 
+Address.ext_num AS ext_num,
+Address.district AS district,
+Address.zipcode AS zipcode,
+Phones.BC_PhoneNumer AS BC_PhoneNumer,
+Phones.CellPhone AS CellPhone,
+status,
+type
+FROM HOTEL_SYSTEM.USER_DATA 
+WHERE userEmail = 'arturo.palomo@axolot.com.mx' AND userPassword = 'Hola12345*' ALLOW FILTERING;
+ //WHERE userName = 'OwO' AND userPassword = 'Hola12345*' ALLOW FILTERING;
+ 
+ 
+ CREATE TABLE HOTEL_SYSTEM.PASSWORD_COUNTER(
+ 	userName varchar,
+ 	wrong_password counter,
+ 	PRIMARY KEY (userName)
+ );
+ 
+Update HOTEL_SYSTEM.PASSWORD_COUNTER SET wrong_password = wrong_password + 1 
+WHERE userName = 'OwO';
+
+SELECT * FROM HOTEL_SYSTEM.PASSWORD_COUNTER;
+
+UPDATE HOTEL_SYSTEM.USER_DATA SET password_count = password_count + 1 WHERE userName = 'OwO';
+
+/****************************************************************************************************************/SELECT *  FROM HOTEL_SYSTEM.USER_DATA;
+DROP TABLE HOTEL_SYSTEM.USER_DATA;
+
+INSERT INTO HOTEL_SYSTEM.USER_DATA (userID, userEmail, userPassword, fullName, dateOfBirth, 
+ 	payrollNumber, Address, Phones, status, type, user_crea, date_crea, user_modif, date_modif)
+VALUES(UUID(), 'arturo.palomo@axolot.com.mx', 'Hola12345*', 'Arturo Palomo Ornelas', 
+'1999-04-10', '05489621354', {street_name: 'Casa de San Telmo', ext_num: '313 PB', 
+	district: 'Las Misiones', zipcode:'66428'}, {BC_PhoneNumer: '8188832493', CellPhone: '8127663463'},
+	 0, 'ADMIN', bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now())), 
+	 bc8c10a1-e9cc-4c48-a8b2-0e7fa6ad8514, toTimestamp(toDate(now()))) IF NOT EXISTS;
+
+CREATE TABLE HOTEL_SYSTEM.USER_DATA(
+  	userID UUID,
+ 	userEmail varchar,
+ 	userPassword varchar,
+ 	fullName varchar,
+    dateOfBirth varchar,
+    payrollNumber varchar,
+    Address frozen<USER_ADDRESS>,
+    Phones frozen <USER_PHONES>,
+ 	status tinyint,
+ 	type varchar,
+ 	user_crea UUID,
+ 	date_crea timestamp,
+ 	user_modif UUID,
+ 	date_modif timestamp,
+ 	PRIMARY KEY (userID)
+ );
+ 
+ INSERT INTO HOTEL_SYSTEM.USER_DATA (userID, userEmail, userPassword, fullName, dateOfBirth,
+ 	payrollNumber, Address, Phones, status, type, user_crea, date_crea, user_modif, date_modif)
+ VALUES (UUID(), 'susana.salazar@axolot.com.mx', 'OwO/12345', 'Susana Deyanira Salazar Mata', 
+ '1996-07-01', '03152648591', {street_name: 'Rio Nazas', ext_num: '245 A', district: 'Mitras Centro', zipcode: '66630'}, {BC_PhoneNumer: '8182967456', CellPhone: '8180854521'}, 0, 'OPERATOR', UUID(), toTimestamp(toDate(now())), UUID(), toTimestamp(toDate(now()))) IF NOT EXISTS;
