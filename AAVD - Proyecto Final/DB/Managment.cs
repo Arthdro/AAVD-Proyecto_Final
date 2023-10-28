@@ -189,6 +189,26 @@ namespace AAVD___Proyecto_Final.DB
             }
         }
 
+        public void createRoom(Room_model new_client, Guid aux_session)
+        {
+            try {
+                /*string query = String.Format("INSERT INTO HOTEL_SYSTEM.CLIENT_DATA (clientID, fullName, address," +
+                 " rfc, email, phones, dateOfBirth, status, user_crea, date_crea, user_modif, date_modif)" +
+                 "VALUES (UUID(), '{0}', {{street_name: '{1}', ext_num: '{2}', district: '{3}', zipcode: '{4}'}}, " +
+                 "'{5}', '{6}', {{BC_PhoneNumer: '{7}', CellPhone: '{8}'}}," +
+                 " '{9}', {10}, {11}, toUnixTimestamp(now()), " +
+                 "{12}, toUnixTimestamp(now())) IF NOT EXISTS",
+                 new_client.fullName, new_client.street_name, new_client.ext_num, new_client.district, new_client.zipcode,
+                 new_client.rfc, new_client.email, new_client.BC_PhoneNumer, new_client.CellPhone, new_client.dateOfBirth,
+                 new_client.status, aux_session, aux_session);
+                session.Execute(query);*/
+            }
+            catch (Exception) {
+
+                throw;
+            }
+        }
+
         public List<Country_Model> getCountries()
         {
             try {
@@ -232,6 +252,21 @@ namespace AAVD___Proyecto_Final.DB
                 return cities.ToList();
             }
             catch (Exception)  {
+                throw;
+            }
+        }
+
+        public List<Hotel_Model> getHotelsByCity(int city, int state, int country) {
+            try {
+                string query = String.Format("SELECT hotelID, hotelName FROM HOTEL_SYSTEM.HOTEL_DATA " +
+                    "WHERE cityID = {0} AND stateID = {1} AND countryID = {2} ALLOW FILTERING;", city, state, country);
+                session.Execute(query);
+                IMapper mapper = new Mapper(session);
+                IEnumerable<Hotel_Model> hotels = mapper.Fetch<Hotel_Model>(query);
+                return hotels.ToList();
+            }
+            catch (Exception)
+            {
                 throw;
             }
         }

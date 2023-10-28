@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnAddRooms = new System.Windows.Forms.Button();
+            this.cmBoxCountries = new System.Windows.Forms.ComboBox();
+            this.lblCountries = new System.Windows.Forms.Label();
+            this.cmBoxStates = new System.Windows.Forms.ComboBox();
+            this.lblState = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -62,10 +64,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.cmboxCity = new System.Windows.Forms.ComboBox();
             this.lblCity = new System.Windows.Forms.Label();
-            this.cmBoxStates = new System.Windows.Forms.ComboBox();
-            this.lblState = new System.Windows.Forms.Label();
-            this.cmBoxCountries = new System.Windows.Forms.ComboBox();
-            this.lblCountries = new System.Windows.Forms.Label();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnAddRooms = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUDAmounPeople)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUDQuantityRooms)).BeginInit();
@@ -112,43 +112,61 @@
             this.panel1.Controls.Add(this.lblCity);
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnAddRooms);
-            this.panel1.Location = new System.Drawing.Point(35, 50);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(47, 62);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(691, 427);
+            this.panel1.Size = new System.Drawing.Size(921, 526);
             this.panel1.TabIndex = 2;
             // 
-            // btnCancel
+            // cmBoxCountries
             // 
-            this.btnCancel.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(551, 363);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(104, 29);
-            this.btnCancel.TabIndex = 154;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.cmBoxCountries.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.cmBoxCountries.FormattingEnabled = true;
+            this.cmBoxCountries.Location = new System.Drawing.Point(184, 34);
+            this.cmBoxCountries.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmBoxCountries.Name = "cmBoxCountries";
+            this.cmBoxCountries.Size = new System.Drawing.Size(331, 36);
+            this.cmBoxCountries.TabIndex = 189;
+            this.cmBoxCountries.SelectedIndexChanged += new System.EventHandler(this.cmBoxCountries_SelectedIndexChanged);
             // 
-            // btnAddRooms
+            // lblCountries
             // 
-            this.btnAddRooms.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddRooms.Location = new System.Drawing.Point(429, 363);
-            this.btnAddRooms.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAddRooms.Name = "btnAddRooms";
-            this.btnAddRooms.Size = new System.Drawing.Size(104, 29);
-            this.btnAddRooms.TabIndex = 153;
-            this.btnAddRooms.Text = "Add room";
-            this.btnAddRooms.UseVisualStyleBackColor = true;
-            this.btnAddRooms.Click += new System.EventHandler(this.btnAddRooms_Click);
+            this.lblCountries.AutoSize = true;
+            this.lblCountries.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.lblCountries.Location = new System.Drawing.Point(27, 39);
+            this.lblCountries.Name = "lblCountries";
+            this.lblCountries.Size = new System.Drawing.Size(141, 28);
+            this.lblCountries.TabIndex = 188;
+            this.lblCountries.Text = "Select country:";
+            // 
+            // cmBoxStates
+            // 
+            this.cmBoxStates.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.cmBoxStates.FormattingEnabled = true;
+            this.cmBoxStates.Location = new System.Drawing.Point(184, 75);
+            this.cmBoxStates.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmBoxStates.Name = "cmBoxStates";
+            this.cmBoxStates.Size = new System.Drawing.Size(331, 36);
+            this.cmBoxStates.TabIndex = 187;
+            this.cmBoxStates.SelectedIndexChanged += new System.EventHandler(this.cmBoxStates_SelectedIndexChanged);
+            // 
+            // lblState
+            // 
+            this.lblState.AutoSize = true;
+            this.lblState.Font = new System.Drawing.Font("Nirmala UI", 12F);
+            this.lblState.Location = new System.Drawing.Point(55, 80);
+            this.lblState.Name = "lblState";
+            this.lblState.Size = new System.Drawing.Size(115, 28);
+            this.lblState.TabIndex = 186;
+            this.lblState.Text = "Select state:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.label9.Location = new System.Drawing.Point(630, 134);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(840, 165);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(30, 21);
+            this.label9.Size = new System.Drawing.Size(36, 28);
             this.label9.TabIndex = 185;
             this.label9.Text = "m²";
             // 
@@ -156,10 +174,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.label8.Location = new System.Drawing.Point(529, 165);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(705, 203);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(19, 21);
+            this.label8.Size = new System.Drawing.Size(23, 28);
             this.label8.TabIndex = 184;
             this.label8.Text = "$";
             // 
@@ -167,50 +184,48 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.label7.Location = new System.Drawing.Point(34, 164);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(45, 202);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 21);
+            this.label7.Size = new System.Drawing.Size(121, 28);
             this.label7.TabIndex = 183;
             this.label7.Text = "Room name:";
             // 
             // txtboxRoomName
             // 
             this.txtboxRoomName.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.txtboxRoomName.Location = new System.Drawing.Point(138, 160);
-            this.txtboxRoomName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtboxRoomName.Location = new System.Drawing.Point(184, 197);
+            this.txtboxRoomName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtboxRoomName.Name = "txtboxRoomName";
-            this.txtboxRoomName.Size = new System.Drawing.Size(249, 29);
+            this.txtboxRoomName.Size = new System.Drawing.Size(331, 34);
             this.txtboxRoomName.TabIndex = 182;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.label6.Location = new System.Drawing.Point(458, 132);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(611, 162);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 21);
+            this.label6.Size = new System.Drawing.Size(105, 28);
             this.label6.TabIndex = 181;
             this.label6.Text = "Room size:";
             // 
             // txtboxSize
             // 
             this.txtboxSize.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.txtboxSize.Location = new System.Drawing.Point(551, 129);
-            this.txtboxSize.Margin = new System.Windows.Forms.Padding(2);
+            this.txtboxSize.Location = new System.Drawing.Point(735, 159);
+            this.txtboxSize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtboxSize.Name = "txtboxSize";
-            this.txtboxSize.Size = new System.Drawing.Size(74, 29);
+            this.txtboxSize.Size = new System.Drawing.Size(97, 34);
             this.txtboxSize.TabIndex = 180;
             // 
             // cBoxMiniBar
             // 
             this.cBoxMiniBar.AutoSize = true;
             this.cBoxMiniBar.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBoxMiniBar.Location = new System.Drawing.Point(227, 373);
-            this.cBoxMiniBar.Margin = new System.Windows.Forms.Padding(2);
+            this.cBoxMiniBar.Location = new System.Drawing.Point(303, 459);
+            this.cBoxMiniBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxMiniBar.Name = "cBoxMiniBar";
-            this.cBoxMiniBar.Size = new System.Drawing.Size(87, 25);
+            this.cBoxMiniBar.Size = new System.Drawing.Size(106, 32);
             this.cBoxMiniBar.TabIndex = 179;
             this.cBoxMiniBar.Text = "Mini Bar";
             this.cBoxMiniBar.UseVisualStyleBackColor = true;
@@ -219,10 +234,10 @@
             // 
             this.cBoxToiletries.AutoSize = true;
             this.cBoxToiletries.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBoxToiletries.Location = new System.Drawing.Point(227, 284);
-            this.cBoxToiletries.Margin = new System.Windows.Forms.Padding(2);
+            this.cBoxToiletries.Location = new System.Drawing.Point(303, 350);
+            this.cBoxToiletries.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxToiletries.Name = "cBoxToiletries";
-            this.cBoxToiletries.Size = new System.Drawing.Size(90, 25);
+            this.cBoxToiletries.Size = new System.Drawing.Size(111, 32);
             this.cBoxToiletries.TabIndex = 178;
             this.cBoxToiletries.Text = "Toiletries";
             this.cBoxToiletries.UseVisualStyleBackColor = true;
@@ -231,10 +246,10 @@
             // 
             this.cBoxAcousticInsolation.AutoSize = true;
             this.cBoxAcousticInsolation.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBoxAcousticInsolation.Location = new System.Drawing.Point(382, 284);
-            this.cBoxAcousticInsolation.Margin = new System.Windows.Forms.Padding(2);
+            this.cBoxAcousticInsolation.Location = new System.Drawing.Point(509, 350);
+            this.cBoxAcousticInsolation.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxAcousticInsolation.Name = "cBoxAcousticInsolation";
-            this.cBoxAcousticInsolation.Size = new System.Drawing.Size(150, 25);
+            this.cBoxAcousticInsolation.Size = new System.Drawing.Size(188, 32);
             this.cBoxAcousticInsolation.TabIndex = 177;
             this.cBoxAcousticInsolation.Text = "Acoustic isolation";
             this.cBoxAcousticInsolation.UseVisualStyleBackColor = true;
@@ -243,10 +258,10 @@
             // 
             this.cBoxCofeeMachine.AutoSize = true;
             this.cBoxCofeeMachine.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBoxCofeeMachine.Location = new System.Drawing.Point(46, 313);
-            this.cBoxCofeeMachine.Margin = new System.Windows.Forms.Padding(2);
+            this.cBoxCofeeMachine.Location = new System.Drawing.Point(61, 385);
+            this.cBoxCofeeMachine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxCofeeMachine.Name = "cBoxCofeeMachine";
-            this.cBoxCofeeMachine.Size = new System.Drawing.Size(129, 25);
+            this.cBoxCofeeMachine.Size = new System.Drawing.Size(158, 32);
             this.cBoxCofeeMachine.TabIndex = 176;
             this.cBoxCofeeMachine.Text = "Coffe machine";
             this.cBoxCofeeMachine.UseVisualStyleBackColor = true;
@@ -255,10 +270,10 @@
             // 
             this.cBoxNoSmokingRoom.AutoSize = true;
             this.cBoxNoSmokingRoom.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBoxNoSmokingRoom.Location = new System.Drawing.Point(46, 373);
-            this.cBoxNoSmokingRoom.Margin = new System.Windows.Forms.Padding(2);
+            this.cBoxNoSmokingRoom.Location = new System.Drawing.Point(61, 459);
+            this.cBoxNoSmokingRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxNoSmokingRoom.Name = "cBoxNoSmokingRoom";
-            this.cBoxNoSmokingRoom.Size = new System.Drawing.Size(163, 25);
+            this.cBoxNoSmokingRoom.Size = new System.Drawing.Size(202, 32);
             this.cBoxNoSmokingRoom.TabIndex = 175;
             this.cBoxNoSmokingRoom.Text = "No smoking rooms";
             this.cBoxNoSmokingRoom.UseVisualStyleBackColor = true;
@@ -267,10 +282,10 @@
             // 
             this.cBoxAirCoinditioning.AutoSize = true;
             this.cBoxAirCoinditioning.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBoxAirCoinditioning.Location = new System.Drawing.Point(227, 344);
-            this.cBoxAirCoinditioning.Margin = new System.Windows.Forms.Padding(2);
+            this.cBoxAirCoinditioning.Location = new System.Drawing.Point(303, 423);
+            this.cBoxAirCoinditioning.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxAirCoinditioning.Name = "cBoxAirCoinditioning";
-            this.cBoxAirCoinditioning.Size = new System.Drawing.Size(154, 25);
+            this.cBoxAirCoinditioning.Size = new System.Drawing.Size(194, 32);
             this.cBoxAirCoinditioning.TabIndex = 174;
             this.cBoxAirCoinditioning.Text = "Air - coinditioning";
             this.cBoxAirCoinditioning.UseVisualStyleBackColor = true;
@@ -279,10 +294,10 @@
             // 
             this.cBoxTVService.AutoSize = true;
             this.cBoxTVService.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBoxTVService.Location = new System.Drawing.Point(227, 313);
-            this.cBoxTVService.Margin = new System.Windows.Forms.Padding(2);
+            this.cBoxTVService.Location = new System.Drawing.Point(303, 385);
+            this.cBoxTVService.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxTVService.Name = "cBoxTVService";
-            this.cBoxTVService.Size = new System.Drawing.Size(104, 25);
+            this.cBoxTVService.Size = new System.Drawing.Size(126, 32);
             this.cBoxTVService.TabIndex = 173;
             this.cBoxTVService.Text = "T.V Service";
             this.cBoxTVService.UseVisualStyleBackColor = true;
@@ -291,10 +306,10 @@
             // 
             this.cBoxFullBathroom.AutoSize = true;
             this.cBoxFullBathroom.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBoxFullBathroom.Location = new System.Drawing.Point(46, 344);
-            this.cBoxFullBathroom.Margin = new System.Windows.Forms.Padding(2);
+            this.cBoxFullBathroom.Location = new System.Drawing.Point(61, 423);
+            this.cBoxFullBathroom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxFullBathroom.Name = "cBoxFullBathroom";
-            this.cBoxFullBathroom.Size = new System.Drawing.Size(127, 25);
+            this.cBoxFullBathroom.Size = new System.Drawing.Size(158, 32);
             this.cBoxFullBathroom.TabIndex = 172;
             this.cBoxFullBathroom.Text = "Full bathroom";
             this.cBoxFullBathroom.UseVisualStyleBackColor = true;
@@ -303,10 +318,10 @@
             // 
             this.cBoxWifi.AutoSize = true;
             this.cBoxWifi.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBoxWifi.Location = new System.Drawing.Point(46, 282);
-            this.cBoxWifi.Margin = new System.Windows.Forms.Padding(2);
+            this.cBoxWifi.Location = new System.Drawing.Point(61, 347);
+            this.cBoxWifi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cBoxWifi.Name = "cBoxWifi";
-            this.cBoxWifi.Size = new System.Drawing.Size(60, 25);
+            this.cBoxWifi.Size = new System.Drawing.Size(73, 32);
             this.cBoxWifi.TabIndex = 171;
             this.cBoxWifi.Text = "WiFi";
             this.cBoxWifi.UseVisualStyleBackColor = true;
@@ -314,38 +329,37 @@
             // NUDAmounPeople
             // 
             this.NUDAmounPeople.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUDAmounPeople.Location = new System.Drawing.Point(551, 28);
-            this.NUDAmounPeople.Margin = new System.Windows.Forms.Padding(2);
+            this.NUDAmounPeople.Location = new System.Drawing.Point(735, 34);
+            this.NUDAmounPeople.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NUDAmounPeople.Name = "NUDAmounPeople";
-            this.NUDAmounPeople.Size = new System.Drawing.Size(43, 29);
+            this.NUDAmounPeople.Size = new System.Drawing.Size(57, 34);
             this.NUDAmounPeople.TabIndex = 170;
             // 
             // NUDQuantityRooms
             // 
             this.NUDQuantityRooms.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUDQuantityRooms.Location = new System.Drawing.Point(551, 95);
-            this.NUDQuantityRooms.Margin = new System.Windows.Forms.Padding(2);
+            this.NUDQuantityRooms.Location = new System.Drawing.Point(735, 117);
+            this.NUDQuantityRooms.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NUDQuantityRooms.Name = "NUDQuantityRooms";
-            this.NUDQuantityRooms.Size = new System.Drawing.Size(43, 29);
+            this.NUDQuantityRooms.Size = new System.Drawing.Size(57, 34);
             this.NUDQuantityRooms.TabIndex = 169;
             // 
             // NUDQuantityBeds
             // 
             this.NUDQuantityBeds.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUDQuantityBeds.Location = new System.Drawing.Point(551, 61);
-            this.NUDQuantityBeds.Margin = new System.Windows.Forms.Padding(2);
+            this.NUDQuantityBeds.Location = new System.Drawing.Point(735, 75);
+            this.NUDQuantityBeds.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NUDQuantityBeds.Name = "NUDQuantityBeds";
-            this.NUDQuantityBeds.Size = new System.Drawing.Size(43, 29);
+            this.NUDQuantityBeds.Size = new System.Drawing.Size(57, 34);
             this.NUDQuantityBeds.TabIndex = 168;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.label5.Location = new System.Drawing.Point(428, 98);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(571, 121);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 21);
+            this.label5.Size = new System.Drawing.Size(145, 28);
             this.label5.TabIndex = 167;
             this.label5.Text = "Quantity room:";
             // 
@@ -353,20 +367,19 @@
             // 
             this.cmboxRoomLevel.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.cmboxRoomLevel.FormattingEnabled = true;
-            this.cmboxRoomLevel.Location = new System.Drawing.Point(138, 226);
-            this.cmboxRoomLevel.Margin = new System.Windows.Forms.Padding(2);
+            this.cmboxRoomLevel.Location = new System.Drawing.Point(184, 279);
+            this.cmboxRoomLevel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmboxRoomLevel.Name = "cmboxRoomLevel";
-            this.cmboxRoomLevel.Size = new System.Drawing.Size(249, 29);
+            this.cmboxRoomLevel.Size = new System.Drawing.Size(331, 36);
             this.cmboxRoomLevel.TabIndex = 166;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.label4.Location = new System.Drawing.Point(41, 230);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(55, 283);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 21);
+            this.label4.Size = new System.Drawing.Size(113, 28);
             this.label4.TabIndex = 165;
             this.label4.Text = "Room level:";
             // 
@@ -374,10 +387,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.label3.Location = new System.Drawing.Point(405, 32);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(540, 39);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 21);
+            this.label3.Size = new System.Drawing.Size(176, 28);
             this.label3.TabIndex = 164;
             this.label3.Text = "Amount of people:";
             // 
@@ -385,30 +397,28 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.label2.Location = new System.Drawing.Point(418, 165);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(557, 203);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 21);
+            this.label2.Size = new System.Drawing.Size(143, 28);
             this.label2.TabIndex = 163;
             this.label2.Text = "Price per night:";
             // 
             // txtboxPriceNight
             // 
             this.txtboxPriceNight.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.txtboxPriceNight.Location = new System.Drawing.Point(551, 162);
-            this.txtboxPriceNight.Margin = new System.Windows.Forms.Padding(2);
+            this.txtboxPriceNight.Location = new System.Drawing.Point(735, 199);
+            this.txtboxPriceNight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtboxPriceNight.Name = "txtboxPriceNight";
-            this.txtboxPriceNight.Size = new System.Drawing.Size(74, 29);
+            this.txtboxPriceNight.Size = new System.Drawing.Size(97, 34);
             this.txtboxPriceNight.TabIndex = 162;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.label1.Location = new System.Drawing.Point(416, 65);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(555, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 21);
+            this.label1.Size = new System.Drawing.Size(162, 28);
             this.label1.TabIndex = 161;
             this.label1.Text = "Quantity of beds:";
             // 
@@ -416,20 +426,19 @@
             // 
             this.cmboxTypeBed.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.cmboxTypeBed.FormattingEnabled = true;
-            this.cmboxTypeBed.Location = new System.Drawing.Point(138, 193);
-            this.cmboxTypeBed.Margin = new System.Windows.Forms.Padding(2);
+            this.cmboxTypeBed.Location = new System.Drawing.Point(184, 238);
+            this.cmboxTypeBed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmboxTypeBed.Name = "cmboxTypeBed";
-            this.cmboxTypeBed.Size = new System.Drawing.Size(249, 29);
+            this.cmboxTypeBed.Size = new System.Drawing.Size(331, 36);
             this.cmboxTypeBed.TabIndex = 160;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.label18.Location = new System.Drawing.Point(39, 197);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Location = new System.Drawing.Point(52, 242);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(93, 21);
+            this.label18.Size = new System.Drawing.Size(119, 28);
             this.label18.TabIndex = 159;
             this.label18.Text = "Type of bed:";
             // 
@@ -437,20 +446,20 @@
             // 
             this.cmboxHotel.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.cmboxHotel.FormattingEnabled = true;
-            this.cmboxHotel.Location = new System.Drawing.Point(138, 127);
-            this.cmboxHotel.Margin = new System.Windows.Forms.Padding(2);
+            this.cmboxHotel.Location = new System.Drawing.Point(184, 156);
+            this.cmboxHotel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmboxHotel.Name = "cmboxHotel";
-            this.cmboxHotel.Size = new System.Drawing.Size(249, 29);
+            this.cmboxHotel.Size = new System.Drawing.Size(331, 36);
             this.cmboxHotel.TabIndex = 158;
+            this.cmboxHotel.SelectedIndexChanged += new System.EventHandler(this.cmboxHotel_SelectedIndexChanged);
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.label16.Location = new System.Drawing.Point(39, 131);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Location = new System.Drawing.Point(52, 161);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 21);
+            this.label16.Size = new System.Drawing.Size(118, 28);
             this.label16.TabIndex = 157;
             this.label16.Text = "Select hotel:";
             // 
@@ -458,72 +467,54 @@
             // 
             this.cmboxCity.Font = new System.Drawing.Font("Nirmala UI", 12F);
             this.cmboxCity.FormattingEnabled = true;
-            this.cmboxCity.Location = new System.Drawing.Point(138, 94);
-            this.cmboxCity.Margin = new System.Windows.Forms.Padding(2);
+            this.cmboxCity.Location = new System.Drawing.Point(184, 116);
+            this.cmboxCity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmboxCity.Name = "cmboxCity";
-            this.cmboxCity.Size = new System.Drawing.Size(249, 29);
+            this.cmboxCity.Size = new System.Drawing.Size(331, 36);
             this.cmboxCity.TabIndex = 156;
+            this.cmboxCity.SelectedIndexChanged += new System.EventHandler(this.cmboxCity_SelectedIndexChanged);
             // 
             // lblCity
             // 
             this.lblCity.AutoSize = true;
             this.lblCity.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.lblCity.Location = new System.Drawing.Point(50, 98);
-            this.lblCity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCity.Location = new System.Drawing.Point(67, 121);
             this.lblCity.Name = "lblCity";
-            this.lblCity.Size = new System.Drawing.Size(82, 21);
+            this.lblCity.Size = new System.Drawing.Size(104, 28);
             this.lblCity.TabIndex = 155;
             this.lblCity.Text = "Select city:";
             // 
-            // cmBoxStates
+            // btnCancel
             // 
-            this.cmBoxStates.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.cmBoxStates.FormattingEnabled = true;
-            this.cmBoxStates.Location = new System.Drawing.Point(138, 61);
-            this.cmBoxStates.Margin = new System.Windows.Forms.Padding(2);
-            this.cmBoxStates.Name = "cmBoxStates";
-            this.cmBoxStates.Size = new System.Drawing.Size(249, 29);
-            this.cmBoxStates.TabIndex = 187;
+            this.btnCancel.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(735, 447);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(139, 36);
+            this.btnCancel.TabIndex = 154;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // lblState
+            // btnAddRooms
             // 
-            this.lblState.AutoSize = true;
-            this.lblState.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.lblState.Location = new System.Drawing.Point(41, 65);
-            this.lblState.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblState.Name = "lblState";
-            this.lblState.Size = new System.Drawing.Size(91, 21);
-            this.lblState.TabIndex = 186;
-            this.lblState.Text = "Select state:";
-            // 
-            // cmBoxCountries
-            // 
-            this.cmBoxCountries.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.cmBoxCountries.FormattingEnabled = true;
-            this.cmBoxCountries.Location = new System.Drawing.Point(138, 28);
-            this.cmBoxCountries.Margin = new System.Windows.Forms.Padding(2);
-            this.cmBoxCountries.Name = "cmBoxCountries";
-            this.cmBoxCountries.Size = new System.Drawing.Size(249, 29);
-            this.cmBoxCountries.TabIndex = 189;
-            // 
-            // lblCountries
-            // 
-            this.lblCountries.AutoSize = true;
-            this.lblCountries.Font = new System.Drawing.Font("Nirmala UI", 12F);
-            this.lblCountries.Location = new System.Drawing.Point(20, 32);
-            this.lblCountries.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCountries.Name = "lblCountries";
-            this.lblCountries.Size = new System.Drawing.Size(112, 21);
-            this.lblCountries.TabIndex = 188;
-            this.lblCountries.Text = "Select country:";
+            this.btnAddRooms.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddRooms.Location = new System.Drawing.Point(572, 447);
+            this.btnAddRooms.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddRooms.Name = "btnAddRooms";
+            this.btnAddRooms.Size = new System.Drawing.Size(139, 36);
+            this.btnAddRooms.TabIndex = 153;
+            this.btnAddRooms.Text = "Add room";
+            this.btnAddRooms.UseVisualStyleBackColor = true;
+            this.btnAddRooms.Click += new System.EventHandler(this.btnAddRooms_Click);
             // 
             // AddRooms_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 519);
+            this.ClientSize = new System.Drawing.Size(1020, 639);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddRooms_Form";
             this.Text = "AddRooms_Form";
             this.panel1.ResumeLayout(false);

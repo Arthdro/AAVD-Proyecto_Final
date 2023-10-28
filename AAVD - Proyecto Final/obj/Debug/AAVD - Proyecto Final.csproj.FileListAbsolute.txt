@@ -273,3 +273,44 @@ C:\GitHub\AAVD-Proyecto_Final\AAVD - Proyecto Final\obj\Debug\AAVD - Proyecto Fi
 C:\GitHub\AAVD-Proyecto_Final\AAVD - Proyecto Final\obj\Debug\AAVD - Proyecto Final.exe
 C:\GitHub\AAVD-Proyecto_Final\AAVD - Proyecto Final\obj\Debug\AAVD - Proyecto Final.pdb
 C:\GitHub\AAVD-Proyecto_Final\AAVD - Proyecto Final\obj\Debug\AAVD___Proyecto_Final.Forms.AddRooms_Form.resources
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\AAVD - Proyecto Final.exe.config
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\AAVD - Proyecto Final.exe
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\AAVD - Proyecto Final.pdb
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\Cassandra.dll
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\Newtonsoft.Json.dll
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\System.Buffers.dll
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\System.Memory.dll
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\Cassandra.xml
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\Newtonsoft.Json.xml
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\System.Buffers.xml
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\System.Memory.xml
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\bin\Debug\System.Threading.Tasks.Dataflow.xml
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD - Proyecto Final.csproj.AssemblyReference.cache
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD - Proyecto Final.csproj.SuggestedBindingRedirects.cache
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD___Proyecto_Final.Forms.AddRooms_Form.resources
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD___Proyecto_Final.Forms.CRUDClient_Form.resources
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD___Proyecto_Final.Forms.CRUDHotel_Form.resources
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD___Proyecto_Final.Forms.CRUDUser_Form.resources
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD___Proyecto_Final.Forms.CustomerRecord_Form.resources
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD___Proyecto_Final.Forms.Home_Menu.resources
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD___Proyecto_Final.Login_Form.resources
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD___Proyecto_Final.Forms.SalesReport_Form.resources
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD___Proyecto_Final.Properties.Resources.resources
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD - Proyecto Final.csproj.GenerateResource.cache
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD - Proyecto Final.csproj.CoreCompileInputs.cache
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD - Proyecto Final.csproj.CopyComplete
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD - Proyecto Final.exe
+C:\Users\artur\Desktop\AAVD\PF - Version actual\AAVD - Proyecto Final\obj\Debug\AAVD - Proyecto Final.pdb

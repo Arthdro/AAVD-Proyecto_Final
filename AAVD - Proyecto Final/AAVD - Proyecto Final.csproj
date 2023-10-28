@@ -172,6 +172,7 @@
     <Compile Include="Models\Client_Model.cs" />
     <Compile Include="Models\Country_Model.cs" />
     <Compile Include="Models\Hotel_Model.cs" />
+    <Compile Include="Models\Room_model.cs" />
     <Compile Include="Models\State_Model.cs" />
     <Compile Include="Models\User_data.cs" />
     <Compile Include="Program.cs" />
